@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(95, 95, 95);
 }
 
 code {
@@ -13,8 +14,6 @@ code {
 }
 
 body {
-  background-color: #4480FF;
-  color: white;
   margin: auto 0;
 }
 
@@ -28,3 +27,41 @@ ul li {
   margin-bottom: 10px;
 }
 
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.block {
+  background-color: rgb(238, 238, 238);
+}
+
+.block, h1, h3 {
+  margin: 10px;
+  padding: 10px;
+}
+
+aside {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.list li {
+  padding: 5px;
+  background-color: rgb(220, 220, 220);
+  padding: 14px;
+}

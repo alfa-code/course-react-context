@@ -64,3 +64,20 @@ footer {
   border: 1px solid black;
   padding: 14px;
 }
+
+.light {
+  background-color: lightgray;
+}
+
+ul.light {
+  background-color: rgb(184, 183, 183);
+}
+
+.dark {
+  background-color: rgb(142, 142, 142);
+  color: white;
+}
+
+ul.dark {
+  background-color: rgb(66, 66, 66);
+}

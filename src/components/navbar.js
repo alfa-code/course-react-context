@@ -1,6 +1,8 @@
-export function Navbar() {
+export function Navbar(props) {
+    const theme = props.theme;
+
     return (
-        <ul className="list">
+        <ul className={ `list ${theme}` }>
             <li>
                 Home
             </li>

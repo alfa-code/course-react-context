@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 
 export class BookList extends Component {
     render() {
-        const theme = this.props.theme;
-
         return (
-            <ul className={ `list ${theme}` }>
+            <ul className={ `list` }>
                 <li>
                     The Little Prince
                 </li>

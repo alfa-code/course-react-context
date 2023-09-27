@@ -12,8 +12,8 @@ function App() {
   return (
     <ThemeContext.Provider value={ theme }>
       <div className={ `App ${theme}` }>
-        <Sidebar theme={ theme } />
-        <Main theme={ theme } />
+        <Sidebar />
+        <Main />
         <Footer />
       </div>
     </ThemeContext.Provider>

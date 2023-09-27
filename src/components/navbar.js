@@ -1,6 +1,8 @@
-export function Navbar(props) {
-    const theme = props.theme;
+import { useContext } from 'react';
+import { ThemeContext } from '../contexts/context';
 
+export function Navbar() {
+    const theme = useContext(ThemeContext);
     return (
         <ul className={ `list ${theme}` }>
             <li>

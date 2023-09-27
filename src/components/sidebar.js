@@ -1,9 +1,9 @@
 import { Navbar } from './navbar';
 
-export function Sidebar(props) {
+export function Sidebar() {
     return (
         <aside className="block">
-            <Navbar theme={ props.theme } />
+            <Navbar />
         </aside>
     )
 }

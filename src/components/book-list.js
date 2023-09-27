@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { ThemeContext } from '../contexts/context';
 
 export class BookList extends Component {
+    static contextType = ThemeContext;
+
     render() {
         return (
-            <ul className={ `list` }>
+            <ul className={ `list ${this.context}` }>
                 <li>
                     The Little Prince
                 </li>

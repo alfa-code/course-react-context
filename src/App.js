@@ -7,10 +7,10 @@ import { Footer } from './components/footer';
 import { ThemeContext } from './contexts/context';
 
 function App() {
-  const [theme] = useState('light');
+  const [theme, setTheme] = useState('light');
 
   return (
-    <ThemeContext.Provider value={ theme }>
+    <ThemeContext.Provider value={ { theme, setTheme } }>
       <div className={ `App ${theme}` }>
         <Sidebar />
         <Main />

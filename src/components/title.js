@@ -4,8 +4,8 @@ import { ThemeContext } from '../contexts/context';
 export function Title() {
     return (
         <ThemeContext.Consumer>
-            { (theme) => (
-                    <h1 className={ theme }>
+            { (themeContext) => (
+                    <h1 className={ themeContext.theme }>
                         Book List
                     </h1>
             ) }

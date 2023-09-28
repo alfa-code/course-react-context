@@ -6,7 +6,7 @@ export class BookList extends Component {
 
     render() {
         return (
-            <ul className={ `list ${this.context}` }>
+            <ul className={ `list ${this.context.theme}` }>
                 <li>
                     The Little Prince
                 </li>
